@@ -18,16 +18,136 @@
 <body>
 <div class="reveal">
     <div class="slides">
-<!--        <section data-markdown>-->
-<!--  <textarea data-template>-->
-<!--    ## Titelslide-->
-<!--	  mit Markdown-->
-<!--  </textarea>-->
-<!--        </section>-->
+        <!--        <section data-markdown>-->
+        <!--  <textarea data-template>-->
+        <!--    ## Titelslide-->
+        <!--	  mit Markdown-->
+        <!--  </textarea>-->
+        <!--        </section>-->
 
-		<section data-include="slides/slide1.html" id="slide-two"></section>
-        <section>Slide 2</section>
-    </div>
+        <section data-include="slides/slide1.html" id="slide-two"></section>
+        <section>
+            <section>
+                <h1>Problemstellung</h1>
+            </section>
+            <section>
+                <h2>Problemstellung</h2> <!-- Muss als header Überschrift angezeigt werden-->
+                <ul>
+                    <li class="fragment">Aktivitäten in AZUM können nicht zeiteffizient auswertet werden</li>
+                    <li class="fragment">Mehr Athleten -> umso unüberschaubar</li>
+                    <li class="fragment">Jede Aktivität muss identifiziert werden um Feedback zu geben</li>
+                </ul>
+            </section>
+            <section>
+                DEMO der aktuellen AZUM Listenübersicht
+                Eine Video laufen lassen und beschreiben. Was meinst du??
+            </section>
+            <section>
+                <h1>Ziel</h1>
+            </section>
+            <section>
+                <h2>Ziel</h2> <!-- Muss als header Überschrift angezeigt werden-->
+                <ul>
+                    <li class="fragment">Übersicht zu verbessern</li>
+                </ul>
+            </section>
+            <section>
+                <h1>Forschungsfragen</h1>
+            </section>
+            <section>
+                <h2>Forschungsfragen</h2> <!-- Muss als header Überschrift angezeigt werden-->
+                <ul>
+                    <li>Klassifizierung von Aktivitäten
+                        <ul>
+                            <li>Wie können gespeicherte Aktivitäten klassifiziert werden, damit Coaches eine Übersicht
+                                zur Qualität der absolvierten Trainingseinheiten erhalten?
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Mechanismus zur Analyse von Aktivitäten
+                        <ul>
+                            <li>Welcher Mechanismus könnte die Trainer am besten bei der Analyse der Aktivitäten
+                                unterstützen?
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section>Computer zur Datenverarbeitung-Elias</section>
+        <section>State of the art-Elias</section>
+        <section>Regelbuch-Elias</section>
+        <section>
+            <section>
+                <h1>User Interfaces</h1>
+            </section>
+            <section>
+                <h2>User Interfaces</h2>
+                <div class="r-stack">
+                    <img class="fragment fade-in-then-out" height="300" src="assets/tooltip_overview.png"
+                         alt="tooltip_overview"/>
+                    <img class="fragment fade-in-then-out" height="300" src="assets/integrity_score.png"
+                         alt="integrity_score"/>
+                    <img class="fragment fade-in-then-out" height="300" src="assets/athlete_profile.png"
+                         alt="athlete_profile"/>
+                    <img class="fragment fade-in-then-out-in" height="300" src="assets/hr_drift.png" alt="hr_drift"/>
+                    <img class="fragment fade-in-then-out-in" height="300" src="assets/efficiency.png"
+                         alt="efficiency"/>
+                </div>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h2>Heatmap</h2>
+            </section>
+            <section>
+                <div>
+                    <h2>Heatmap</h2>
+                    <div class="r-stack">
+                        <img class="fragment fade-in-then-out" src="assets/heatmap_overview.png"
+                             alt="headmap_overview"/>
+                        <img class="fragment fade-in-then-out" height="300" src="assets/heatmap_detail.png"
+                             alt="headmap_detail"/>
+                    </div>
+            </section>
+        </section>
+        <section>Evaluierung und Testing-Elias</section>
+        <section>
+            <section>
+                <h2>Findings</h2>
+            </section>
+            <section data-auto-animate>
+                <h2>Findings</h2>
+                <ul>
+                    <li class="fragment">Heatmap zur Erkennung von Trends</li>
+                    <li class="fragment">Tooltip Icons zur schnellen Übersicht dank Klassifizierung</li>
+                    <li class="fragment">Effizienzsteigerung von Coaches bei der Übersicht und Analyse von Aktivitäten
+                    </li>
+                    <li class="fragment">Entscheidender Faktor ist die Darstellungsform</li>
+                    <li class="fragment">Einzigartige Kombination aus Datenvisualisierung und Klassifizierung</li>
+                    <li class="fragment">Großer Wettbewerbsvorteil</li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <section data-auto-animate>
+                <h1>Vielen Dank!</h1>
+            </section>
+            <section data-auto-animate>
+                <h2>Ein besonderer Dank geht an:</h2>
+                <h3>Dan und Johannes</h3>
+                <p>Vielen Dank für Ihr Vertrauen und Ihre Unterstützung bei diesem Projekt. Es war eine Freude, mit
+                    Ihnen zusammenzuarbeiten.</p>
+            </section>
+            <section data-auto-animate>
+                <h2>Ein besonderer Dank geht an:</h2>
+                <h3>Betreuer</h3>
+                    <p>Herzlichen Dank für Ihre wertvolle Anleitung und Unterstützung. Ihre Expertise und Ihr Engagement
+                        haben den Erfolg dieses Projekts maßgeblich beeinflusst.</p>
+                </section>
+    </section>
+
+</div>
 </div>
 
 <script src="dist/reveal.js"></script>
@@ -43,14 +163,14 @@
 
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
-		// Function to load external HTML files
+        // Function to load external HTML files
 
     });
-	document.querySelectorAll('[data-include]').forEach(function(el) {
-		fetch(el.getAttribute('data-include'))
-				.then(response => response.text())
-				.then(html => el.innerHTML = html);
-	});
+    document.querySelectorAll('[data-include]').forEach(function (el) {
+        fetch(el.getAttribute('data-include'))
+            .then(response => response.text())
+            .then(html => el.innerHTML = html);
+    });
 </script>
 </body>
 </html>
