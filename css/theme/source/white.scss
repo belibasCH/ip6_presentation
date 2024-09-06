@@ -21,7 +21,7 @@ $backgroundColor: #fff;
 $mainColor: #222;
 $headingColor: #222;
 
-$mainFontSize: 42px;
+$mainFontSize: 30px;
 $mainFont: 'Source Sans Pro', Helvetica, sans-serif;
 $headingFont: 'Source Sans Pro', Helvetica, sans-serif;
 $headingTextShadow: none;
@@ -32,10 +32,10 @@ $linkColor: #2a76dd;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
-$heading1Size: 2.5em;
-$heading2Size: 1.6em;
-$heading3Size: 1.3em;
-$heading4Size: 1.0em;
+$heading1Size: 1.9em;
+$heading2Size: 1.3em;
+$heading3Size: 1.0em;
+$heading4Size: 0.7em;
 
 $overlayElementBgColor: 0, 0, 0;
 $overlayElementFgColor: 240, 240, 240;
