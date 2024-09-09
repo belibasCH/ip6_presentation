@@ -56,5 +56,13 @@
 }
 .rq-box.small {
     max-width: 150px;
-    padding: 0.2rem;
+    padding: 0.5rem;
+}
+
+.paper-sub {
+  display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+
 }
