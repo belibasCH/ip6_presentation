@@ -32,3 +32,29 @@
     border-radius: 0.5rem;
     background-color: #CAF4AD;
 }
+.rq-box {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    background: lightyellow;
+}
+.rq-box p {
+    font-size: 0.8rem;
+    margin: 0.5rem 0 !important;
+}
+.rq-box h5 {
+    font-size: 1rem;
+}
+.rq-title {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    gap: 0.5rem;
+}
+.rq-title img {
+    margin: 0 !important;
+}
+.rq-box.small {
+    max-width: 150px;
+    padding: 0.2rem;
+}
