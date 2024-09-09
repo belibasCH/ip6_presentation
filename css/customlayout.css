@@ -1,0 +1,27 @@
+.rule {
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+.rule p {
+    font-size: 0.8rem;
+}
+.rule.red {
+    border: 2px solid darkred;
+}
+.rule.orange {
+    border: 2px solid darkorange;
+}
+
+.rule-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.rules div {
+    max-width: 200px;
+}
+.rules {
+    display: flex;
+    gap: 2rem;
+    justify-content: end;
+}
